@@ -26,27 +26,7 @@ class ViewController: UIViewController {
     }
 
     func fetchTokenThenJoin() {
-        var request = URLRequest(url: URL(string: "\(urlBase)/api/get/rtc/test")!, timeoutInterval: 10)
-        request.httpMethod = "GET"
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data else {
-                print(String(describing: error))
-                return
-            }
-            guard let responseJSON = try? JSONSerialization.jsonObject(with: data, options: []),
-                  let responseDict = responseJSON as? [String: Any],
-                  let rtcToken = responseDict["rtc_token"] as? String,
-                  let uid = responseDict["uid"] as? UInt
-            else {
-                return
-            }
-
-            // Join Channel with new token
-            self.agoraViewer.join(channel: self.channelName, with: rtcToken, as: .broadcaster, uid: uid)
-        }
-
-        task.resume()
+        <#Fetch Token then Join Channel#>
     }
 }
 
