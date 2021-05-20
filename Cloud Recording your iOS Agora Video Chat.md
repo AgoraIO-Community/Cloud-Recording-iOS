@@ -36,6 +36,8 @@ Once you’ve created an AWS account, we need to create an Amazon S3 bucket to s
 
 ## Deploying Our Back End
 
+The back end being used for this project can be found [here](https://github.com/raysandeep/Agora-Cloud-Recording-Example).
+
 Before deploying our back end, we need the following variables. (It’s time to use our text file.) We’ll be using the [Heroku](https://www.heroku.com/) one-click deploy to make it super simple to get our back end up and running. You can use any other service as well:
 
 ```
@@ -59,13 +61,13 @@ CUSTOMER_CERTIFICATE=
 
 ## Building Our App
 
-We’ll be using the [Agora UIKit for iOS](https://github.com/AgoraIO-Community/iOS-UIKit) to make the video calling implementation simpler. If you’re new to the Agora platform, I recommend reading through the blog to understand how to build a video chat app. We’ll take that as a basis and discuss how to add cloud recording to it.
+We’ll be using the [Agora UIKit for iOS](https://github.com/AgoraIO-Community/iOS-UIKit) to make the video calling implementation simpler. If you’re new to the Agora UIKit library or the Agora platform, I'd recommend reading through the following blog before getting started.
 
-If you just want the final app, you can go to this [repo](https://github.com/EkaanshArora/Agora-RN-Recording/blob/main/App.tsx).
+We’ll start from the branch `blog-start` from this [repo](https://github.com/AgoraIO-Community/Cloud-Recording-iOS/tree/blog-start) to get started. This branch has the basic video calling implemented, it just needs the cloud recording and token fetching added in the placeholders.
 
 ### Getting the Boilerplate
 
-Make sure you have satisfied the prerequisites for creating and building a React Native app. Git clone or download the ZIP file from the [main branch](https://github.com/EkaanshArora/Agora-RN-Quickstart). In the project directory, execute pod install to install the right CocoaPods.
+Make sure you have satisfied the prerequisites for creating and building an iOS app. Git clone or download the ZIP file from the [blog-start branch](https://github.com/AgoraIO-Community/Cloud-Recording-iOS/tree/blog-start). In the project directory, execute pod install to install the right CocoaPods.
 
 ### Adding Credentials
 
@@ -100,3 +102,12 @@ For information on what the status response shows, check out the [RESTful API do
 ## Conclusion
 
 That’s it, now you have an app that uses Agora Cloud Recording to store your videos. You can find out how to merge the resulting video fragments [here](https://docs.agora.io/en/cloud-recording/cloud_recording_merge_files?platform=RESTful). You can find more information about cloud recording [here](https://docs.agora.io/en/cloud-recording/landing-page?platform=RESTful).
+
+To see and the completed project, clone or download the deafult branch of this repository, as well as launching the server.
+
+## Other Resources
+
+For more information about building applications using Agora.io SDKs, take a look at the [Agora Video Call Quickstart Guide](https://docs.agora.io/en/Video/start_call_ios?platform=iOS&utm_source=medium&utm_medium=blog&utm_campaign=cloud-recording-ios) and [Agora API Reference](https://docs.agora.io/en/Video/API Reference/oc/docs/headers/Agora-Objective-C-API-Overview.html?utm_source=medium&utm_medium=blog&utm_campaign=cloud-recording-ios).
+
+I also invite you to [join the Agoira.io Developer Slack community](https://www.agora.io/en/join-slack/).
+
