@@ -2,5 +2,5 @@
 
 This project shows how to use cloud recording with an Agora video call.
 
-Check out [the guide](Cloud Recording your iOS Agora Video Chat.md) to see how to implement.
+Check out [the guide](Cloud%20Recording%20your%20iOS%20Agora%20Video%20Chat.md) to see how to implement.
 
